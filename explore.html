@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FC Bayern München | Club Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800;900&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    
+<!-- HEADER -->
+<header>
+    <div class="header-brand">
+
+        <img src="images/bayernlogo.png"
+             class="header-logo">
+
+        <h1>BAYERN MÜNCHEN</h1>
+
+    </div>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="trophy.html">Trophies</a>
+    <a href="legends.html">Legends</a>
+    <a href="squad.html">Squad</a>
+    <a href="kane.html">2026 Ballon d'Or</a>
+    <a href="explore.html" class="active">Explore</a>
+
+    <button id="darkModeBtn">🌙 Dark Mode</button>
+</nav>
+
+    
+<main>
+
+    <!-- STADIUM CAROUSEL -->
+    <section class="stadium-section">
+
+        <h2>THE HEART OF BAYERN</h2>
+        <p>Discover the iconic home of Bayern München</p>
+
+        
+<div class="stadium-carousel">
+
+    <div class="stadium-slide active">
+        <img src="images/allianzoutside.jpg" alt="Allianz Arena">
+    </div>
+
+    <div class="stadium-slide">
+        <img src="images/allianz2.jpg" alt="Allianz Arena">
+    </div>
+
+    <div class="stadium-slide">
+        <img src="images/allianz1.jpg" alt="Allianz Arena">
+    </div>
+
+    <div class="stadium-slide">
+        <img src="images/allianz3.jpg" alt="Allianz Arena">
+    </div>
+
+    <div class="stadium-caption">
+        <h3>Allianz Arena</h3>
+        <p>The Home of FC Bayern</p>
+    </div>
+
+    <button class="stadium-prev"
+            onclick="changeSlide(-1)">❮</button>
+
+    <button class="stadium-next"
+            onclick="changeSlide(1)">❯</button>
+
+</div>
+
+<div class="stadium-dots">
+    <span class="dot active" onclick="showSlide(0)"></span>
+    <span class="dot" onclick="showSlide(1)"></span>
+    <span class="dot" onclick="showSlide(2)"></span>
+    <span class="dot" onclick="showSlide(3)"></span>
+</div>
+</section>
+
+
+<!-- LATEST MATCHES -->
+<section class="matches-section">
+
+    <h2>LATEST MATCHES</h2>
+    <p>Recent results of FC Bayern München</p>
+
+    <div class="matches-grid">
+
+        <!-- MATCH 1 -->
+        <a href="match1.html" class="match-card">
+
+            <span class="match-competition">BUNDESLIGA</span>
+            <p class="match-date">7 November 2026</p>
+
+            
+<div class="match-score">
+
+    <div class="team">
+        <img src="images/mainz05.png" alt="Mainz 05">
+        <span>Mainz 05</span>
+    </div>
+
+    <strong>1 - 2</strong>
+
+    <div class="team">
+        <img src="images/bayernlogo.png" alt="Bayern München">
+        <span>Bayern München</span>
+    </div>
+
+</div>
+
+
+            <span class="match-result win">WIN</span>
+
+        </a>
+
+        <!-- MATCH 2 -->
+        <a href="match2.html" class="match-card">
+
+            <span class="match-competition">CHAMPIONS LEAGUE</span>
+            <p class="match-date">3 November 2026</p>
+
+            
+
+<div class="match-score">
+
+    <div class="team">
+        <img src="images/atletico.png" alt="Atlético Madrid">
+        <span>Atlético Madrid</span>
+    </div>
+
+    <strong>0 - 2</strong>
+
+    <div class="team">
+        <img src="images/bayernlogo.png" alt="Bayern München">
+        <span>Bayern München</span>
+    </div>
+
+</div>
+            <span class="match-result win">WIN</span>
+
+        </a>
+
+        <!-- MATCH 3 -->
+        <a href="match3.html" class="match-card">
+
+            <span class="match-competition">BUNDESLIGA</span>
+            <p class="match-date">31 October 2026</p>
+
+            
+<div class="match-score">
+
+    <div class="team">
+        <img src="images/bayernlogo.png" alt="Bayern München">
+        <span>Bayern München</span>
+    </div>
+
+    <strong>2 - 2</strong>
+
+    <div class="team">
+        <img src="images/dortmund.png" alt="Borussia Dortmund">
+        <span>Borussia Dortmund</span>
+    </div>
+
+</div>
+            <span class="match-result draw">DRAW</span>
+
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- EXPLORE MORE -->
+<section class="explore-more">
+
+    <h2>EXPLORE MORE</h2>
+    <p>Discover more about FC Bayern München</p>
+
+    <div class="explore-grid">
+
+        <a href="history.html" class="explore-card">
+            <img src="images/historicbayern.png" alt="Bayern History">
+            <div class="explore-info">
+                <h3>CLUB HISTORY</h3>
+                <p>Discover the history of Bayern München.</p>
+                <span>EXPLORE →</span>
+            </div>
+        </a>
+
+        <a href="trophy.html" class="explore-card">
+            <img src="images/ucl2013.png" alt="Bayern Trophies">
+            <div class="explore-info">
+                <h3>TROPHIES</h3>
+                <p>Explore Bayern's greatest achievements.</p>
+                <span>EXPLORE →</span>
+            </div>
+        </a>
+
+        <a href="legends.html" class="explore-card">
+            <img src="images/beckenbauer.png" alt="Bayern Legends">
+            <div class="explore-info">
+                <h3>CLUB LEGENDS</h3>
+                <p>Meet the legendary Bayern players.</p>
+                <span>EXPLORE →</span>
+            </div>
+        </a>
+
+        <a href="squad.html" class="explore-card">
+            <img src="images/michael-olise.png" alt="Bayern Squad">
+            <div class="explore-info">
+                <h3>FIRST TEAM</h3>
+                <p>Discover the current Bayern squad.</p>
+                <span>EXPLORE →</span>
+            </div>
+        </a>
+
+        <a href="kane.html" class="explore-card">
+            <img src="images/kane.png" alt="Harry Kane">
+            <div class="explore-info">
+                <h3>HARRY KANE</h3>
+                <p>Discover the story of Harry Kane.</p>
+                <span>EXPLORE →</span>
+            </div>
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+        <p>FC Bayern München - Club Profile</p>
+        <p>Muhammad Thaariq Al Fattaah</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
